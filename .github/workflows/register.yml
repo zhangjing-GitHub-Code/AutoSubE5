@@ -1,3 +1,4 @@
+#fuck you GH
 name: Register APP
 
 on:
@@ -7,12 +8,10 @@ jobs:
   register:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout code YOURMUM
         uses: actions/checkout@v2
         with:
-          repository: zhangjing-GitHub-Code/AutoSubE5
           ref: master
-          token: ${{ secrets.PAT }}
 
       - name: Setup python and poetry
         uses: actions/setup-python@v2
