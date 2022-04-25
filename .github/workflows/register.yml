@@ -34,7 +34,10 @@ jobs:
           npm install
 
       - name: Register app
+        with:
+          github_token: ${{ secrets.PAT }}
         env:
+          github_token: ${{ secrets.PAT }}
           USER: ${{ secrets.USER }}
           PASSWD: ${{ secrets.PASSWD }}
         run: bash wrapper.sh register
